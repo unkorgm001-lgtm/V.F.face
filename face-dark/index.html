@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SocialHub // Dark Mode Feed</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="nav-left">
+      <div class="brand-logo">f</div>
+      <div class="search-box">
+        <span class="search-icon">&#128269;</span>
+        <input type="text" placeholder="Search SocialHub" aria-label="Search SocialHub" />
+      </div>
+    </div>
+
+    <nav class="nav-center" aria-label="Primary Navigation">
+      <button class="nav-tab active" data-tab="feed" title="Home">&#127968;</button>
+      <button class="nav-tab" data-tab="watch" title="Watch">&#127916;</button>
+      <button class="nav-tab" data-tab="market" title="Marketplace">&#128722;</button>
+      <button class="nav-tab" data-tab="groups" title="Groups">&#128101;</button>
+    </nav>
+
+    <div class="nav-right">
+      <button class="circle-btn" title="Menu">&#9783;</button>
+      <button class="circle-btn" title="Messenger">&#128172;</button>
+      <button class="circle-btn" title="Notifications">
+        &#128276;
+        <span class="badge">3</span>
+      </button>
+      <div class="avatar avatar-sm" title="ORG | UNK Profile">OU</div>
+    </div>
+  </header>
+
+  <div class="app-layout">
+    <aside class="sidebar-left">
+      <ul class="menu-list">
+        <li class="menu-item active">
+          <div class="avatar avatar-xs">OU</div>
+          <span>ORG | UNK</span>
+        </li>
+        <li class="menu-item">
+          <span class="menu-icon">&#128101;</span>
+          <span>Friends</span>
+        </li>
+        <li class="menu-item">
+          <span class="menu-icon">&#128337;</span>
+          <span>Memories</span>
+        </li>
+        <li class="menu-item">
+          <span class="menu-icon">&#128278;</span>
+          <span>Saved</span>
+        </li>
+        <li class="menu-item">
+          <span class="menu-icon">&#127916;</span>
+          <span>Video</span>
+        </li>
+        <li class="menu-item">
+          <span class="menu-icon">&#128722;</span>
+          <span>Marketplace</span>
+        </li>
+      </ul>
+
+      <div class="divider"></div>
+      <h3 class="sidebar-heading">Your Shortcuts</h3>
+      <ul class="menu-list">
+        <li class="menu-item">
+          <span class="shortcut-badge" style="background:#2d88ff;">UI</span>
+          <span>Dark UI Designers</span>
+        </li>
+        <li class="menu-item">
+          <span class="shortcut-badge" style="background:#45bd62;">FB</span>
+          <span>F50 Speed Club</span>
+        </li>
+        <li class="menu-item">
+          <span class="shortcut-badge" style="background:#f3425f;">JS</span>
+          <span>Frontend Builders</span>
+        </li>
+      </ul>
+
+      <footer class="sidebar-footer">
+        Privacy &middot; Terms &middot; Advertising &middot; Cookies<br />
+        Created by <strong>ORG | UNK</strong> &copy; 2026
+      </footer>
+    </aside>
+
+    <main class="feed-container">
+      <section class="stories-row" aria-label="Stories">
+        <div class="story-card create-story">
+          <div class="story-bg create-bg">
+            <div class="avatar avatar-lg">OU</div>
+          </div>
+          <div class="create-story-footer">
+            <div class="plus-btn">+</div>
+            <span>Create story</span>
+          </div>
+        </div>
+
+        <div class="story-card">
+          <div class="story-bg" style="background: linear-gradient(135deg, #1b3b6f, #065a82);"></div>
+          <div class="story-avatar">AM</div>
+          <span class="story-name">Alex Mercer</span>
+        </div>
+
+        <div class="story-card">
+          <div class="story-bg" style="background: linear-gradient(135deg, #3c1642, #086375);"></div>
+          <div class="story-avatar">SL</div>
+          <span class="story-name">Sara Lin</span>
+        </div>
+
+        <div class="story-card">
+          <div class="story-bg" style="background: linear-gradient(135deg, #2b2d42, #8d0801);"></div>
+          <div class="story-avatar">DK</div>
+          <span class="story-name">David K.</span>
+        </div>
+      </section>
+
+      <section class="card composer-card">
+        <div class="composer-top">
+          <div class="avatar avatar-md">OU</div>
+          <input
+            type="text"
+            id="postInput"
+            placeholder="What's on your mind, ORG | UNK?"
+            aria-label="Create a post"
+          />
+          <button id="publishBtn" class="btn-post">Post</button>
+        </div>
+        <div class="divider"></div>
+        <div class="composer-actions">
+          <button class="composer-action-btn"><span style="color:#f3425f;">&#128249;</span> Live video</button>
+          <button class="composer-action-btn"><span style="color:#45bd62;">&#128247;</span> Photo/video</button>
+          <button class="composer-action-btn"><span style="color:#f7b928;">&#128522;</span> Feeling/activity</button>
+        </div>
+      </section>
+
+      <div id="feedPosts">
+        <article class="card post-card">
+          <div class="post-header">
+            <div class="post-author-info">
+              <div class="avatar avatar-md" style="background:#2d88ff;">OU</div>
+              <div>
+                <h4>ORG | UNK <span class="verified">&#10004;</span></h4>
+                <span class="post-meta">2 hrs &middot; &#127760;</span>
+              </div>
+            </div>
+            <button class="more-btn" aria-label="More options">&bull;&bull;&bull;</button>
+          </div>
+
+          <p class="post-text">
+            Exploring high-contrast dark mode surfaces (#18191A canvas + #242526 elevated cards) for comfortable late-night scrolling. Clean typography and subtle borders keep focus on content.
+          </p>
+
+          <div class="post-media-banner">
+            <div class="banner-tag">DARK UI SYSTEM</div>
+            <h2>Midnight Canvas &amp; Soft Elevation</h2>
+            <p>Designed by ORG | UNK</p>
+          </div>
+
+          <div class="post-stats">
+            <span>&#128077; &#10084;&#65039; <strong class="like-count">148</strong></span>
+            <span><span class="comment-count">12</span> comments &middot; 9 shares</span>
+          </div>
+
+          <div class="divider"></div>
+
+          <div class="post-actions">
+            <button class="action-btn like-btn">&#128077; Like</button>
+            <button class="action-btn comment-toggle-btn">&#128172; Comment</button>
+            <button class="action-btn">&#8618; Share</button>
+          </div>
+
+          <div class="comments-section hidden">
+            <div class="comment-list">
+              <div class="comment-item">
+                <div class="avatar avatar-xs" style="background:#45bd62;">SL</div>
+                <div class="comment-bubble">
+                  <strong>Sara Lin</strong>
+                  <p>That contrast ratio is super clean on OLED screens!</p>
+                </div>
+              </div>
+            </div>
+            <form class="comment-form">
+              <div class="avatar avatar-xs">OU</div>
+              <input type="text" placeholder="Write a comment..." required />
+            </form>
+          </div>
+        </article>
+
+        <article class="card post-card">
+          <div class="post-header">
+            <div class="post-author-info">
+              <div class="avatar avatar-md" style="background:#e4405f;">AM</div>
+              <div>
+                <h4>Alex Mercer</h4>
+                <span class="post-meta">5 hrs &middot; &#128101;</span>
+              </div>
+            </div>
+            <button class="more-btn" aria-label="More options">&bull;&bull;&bull;</button>
+          </div>
+
+          <p class="post-text">
+            Just wrapped up evening training under the stadium floodlights. Nothing beats testing new speed boots on damp turf.
+          </p>
+
+          <div class="post-stats">
+            <span>&#128077; <strong class="like-count">94</strong></span>
+            <span><span class="comment-count">7</span> comments &middot; 3 shares</span>
+          </div>
+
+          <div class="divider"></div>
+
+          <div class="post-actions">
+            <button class="action-btn like-btn">&#128077; Like</button>
+            <button class="action-btn comment-toggle-btn">&#128172; Comment</button>
+            <button class="action-btn">&#8618; Share</button>
+          </div>
+
+          <div class="comments-section hidden">
+            <div class="comment-list"></div>
+            <form class="comment-form">
+              <div class="avatar avatar-xs">OU</div>
+              <input type="text" placeholder="Write a comment..." required />
+            </form>
+          </div>
+        </article>
+      </div>
+    </main>
+
+    <aside class="sidebar-right">
+      <h3 class="sidebar-heading">Sponsored</h3>
+      <div class="sponsored-item">
+        <div class="sponsored-thumb">F50</div>
+        <div>
+          <strong>F50 Dark Spark Edition</strong>
+          <span>f50speedlab.example</span>
+        </div>
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="contacts-header">
+        <h3 class="sidebar-heading">Contacts</h3>
+        <span>&#128269; &nbsp; &bull;&bull;&bull;</span>
+      </div>
+
+      <ul class="contact-list">
+        <li class="contact-item">
+          <div class="avatar-wrap">
+            <div class="avatar avatar-xs" style="background:#2d88ff;">AM</div>
+            <span class="online-dot"></span>
+          </div>
+          <span>Alex Mercer</span>
+        </li>
+        <li class="contact-item">
+          <div class="avatar-wrap">
+            <div class="avatar avatar-xs" style="background:#45bd62;">SL</div>
+            <span class="online-dot"></span>
+          </div>
+          <span>Sara Lin</span>
+        </li>
+        <li class="contact-item">
+          <div class="avatar-wrap">
+            <div class="avatar avatar-xs" style="background:#f7b928; color:#111;">DK</div>
+            <span class="online-dot"></span>
+          </div>
+          <span>David K.</span>
+        </li>
+        <li class="contact-item">
+          <div class="avatar-wrap">
+            <div class="avatar avatar-xs" style="background:#a855f7;">NR</div>
+            <span class="online-dot"></span>
+          </div>
+          <span>Nadia Rahman</span>
+        </li>
+        <li class="contact-item">
+          <div class="avatar-wrap">
+            <div class="avatar avatar-xs" style="background:#ec4899;">TM</div>
+          </div>
+          <span>Tariq Mansour</span>
+        </li>
+      </ul>
+    </aside>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
